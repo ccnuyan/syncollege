@@ -1,0 +1,88 @@
+@import './Editor.scss';
+.primary {
+    width: 100%;
+    padding: 6px 8px;
+    border-bottom: 1px solid #333;
+}
+.secondary {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 50px;
+    font-size: 17px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.primary > .button {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #eee;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: left;
+    line-height: initial;
+    background: #444;
+    -webkit-transition: background 0.12s ease;
+    transition: background 0.12s ease;
+    -webkit-font-smoothing: initial;
+}
+.primary > .button.preview {
+    display: inline-block;
+    height: 50px;
+    padding: 0;
+    margin-bottom: 6px;
+    background: #40cb90;
+    text-align: center;
+}
+.primary > .button.preview:hover {
+    background: #68d6a7;
+}
+.primary > .button.undo {
+    display: inline-block;
+    height: 50px;
+    padding: 0;
+    margin-bottom: 6px;
+    background: #666666;
+    text-align: center;
+}
+.primary > .button.undo:hover {
+    background: gray;
+}
+.primary > .button.save {
+    display: inline-block;
+    height: 50px;
+    padding: 0;
+    margin-bottom: 6px;
+    background: #666666;
+    text-align: center;
+}
+.primary > .button.save:hover {
+    background: gray;
+}
+.secondary {
+    position: relative;
+    overflow: auto;
+    padding: 0 0 8px;
+}
+.secondary > .button {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    margin: 0;
+    overflow: hidden;
+    outline: 0;
+    text-align: center;
+    -webkit-transition: none;
+    transition: none;
+}
+.secondary > .button:hover {
+    background: #515151;
+}

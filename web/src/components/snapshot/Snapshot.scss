@@ -1,0 +1,85 @@
+@import '../variables';
+.presentationEach {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+    height: 180px;
+    padding: 0;
+    animation-name: drop;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.6s;
+    -moz-animation-name: drop;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 0.6s;
+    -webkit-animation-name: drop;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 0.6s;
+}
+.presentationName {
+    color: $default-dark;
+    font-size: 150%;
+}
+.presentation {
+    height: 100%;
+    position: absolute;
+    font-size: 80%;
+    left: 15px;
+    right: 15px;
+    border: 2px solid $default-color;
+    cursor: pointer;
+}
+.presentation:hover {
+    border: 2px solid $default-dark;
+}
+.presentation > button {
+    position: absolute;
+    border-radius: 20px;
+    border: 2px solid $default-color;
+    color: $default-dark;
+    width: 40px;
+    height: 40px;
+    right: 8px;
+    top: 8px;
+}
+.presentation > .presentationName {
+    padding: 20px;
+}
+.presentation > .options {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.presentation > .options > button {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    margin: 8px 8px 8px 0;
+    border: 2px solid $default-color;
+    color: $default-dark;
+}
+.newPresentation {
+    @extend .presentation;
+    position: absolute;
+    background: $warning-color;
+    color: #fff;
+    border-color: transparent;
+}
+.newPresentationForm {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.newPresentationTextArea {
+    padding: 10px;
+    resize: none;
+    min-height: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: $default-dark;
+    border: 0;
+}

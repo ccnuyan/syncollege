@@ -1,0 +1,51 @@
+@import '../variables';
+.home {
+    position: relative;
+    height: 100%;
+    background: #ffffff;
+}
+.home a {
+    font-size: 120%;
+    padding: 10px 20px;
+    color: inherit;
+}
+.backgroundBlockHome {
+    padding: 20px;
+    height: 100%;
+}
+.createNewForm {
+    background: $default-light;
+    padding: 10px 30px;
+    width: 420px;
+    height: auto;
+    position: fixed;
+    border-radius: 4px;
+    border: 2px solid $default-dark;
+    color: $default-dark;
+    z-index: 1;
+}
+.createNewForm button {
+    width: 80px;
+    margin: 20px 20px 20px 0;
+}
+.header {
+    position: relative;
+    margin-top: 0;
+    padding-top: 50px;
+}
+.header * {
+    display: inline-block;
+}
+.header > div > div {
+    font-size: 50%;
+    margin: 5px 10px 0;
+    display: inline-block;
+    vertical-align: top;
+}
+.header > button {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    bottom: 6px;
+}

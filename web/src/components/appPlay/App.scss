@@ -1,0 +1,33 @@
+@import '../../components/variables';
+//编辑模式下可以设置z-index属性，使得所有编辑界面元素位于reaval上方
+.app {
+    position: absolute;
+    background: $default-light;
+    width: 700px;
+    height: 450px;
+    z-index: 255;
+    animation-name: emerge;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.6s;
+    -moz-animation-name: emerge;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 0.6s;
+    -webkit-animation-name: emerge;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 0.6s;
+}
+.pageContent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 48px;
+    bottom: 0;
+    overflow-y: auto;
+}
+.header {
+    height: 48px;
+    padding: 12px 12px 12px 16px;
+}

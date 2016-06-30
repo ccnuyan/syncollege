@@ -1,0 +1,200 @@
+.toolbar-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 12px;
+}
+.toolbar-add-block-option {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 12px;
+}
+.toolbar-add-block-option:hover {
+    border: 2px solid #888;
+}
+.toolbar-add-block-option-icon {
+    display: block;
+    font-size: 2em;
+    pointer-events: none;
+}
+.toolbar-add-block-option-label {
+    display: block;
+    font-size: 1em;
+    margin-top: 0.5em;
+    pointer-events: none;
+}
+.toolbar-option {
+    display: block;
+    position: relative;
+    height: auto;
+    margin-bottom: 15px;
+}
+.toolbar-option {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+}
+.toolbar-option-label {
+    position: relative;
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #ddd;
+    cursor: default;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+}
+.toolbar-multi-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.toolbar-option[data-number-of-items='2'] > .toolbar-multi-inner > .toolbar-multi-item {
+    width: 50%;
+}
+.toolbar-option[data-number-of-items='3'] > .toolbar-multi-inner > .toolbar-multi-item {
+    width: 33%;
+}
+.toolbar-option[data-number-of-items='4'] > .toolbar-multi-inner > .toolbar-multi-item {
+    width: 25%;
+}
+.toolbar-multi-item {
+    display: inline-block;
+    padding: 2px 8px;
+    cursor: pointer;
+    text-align: center;
+    background: #4e4e4e;
+    border-left: 1px solid #292929;
+    border-right: 1px solid #292929;
+    border-radius: 0;
+}
+.toolbar-multi-item:hover {
+    background: gray;
+}
+.toolbar-stepper .stepper {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: #4e4e4e;
+    border: 1px solid #292929;
+}
+.toolbar-stepper .stepper .stepper-number {
+    position: relative;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 6px;
+    color: #fff;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    outline-offset: 0;
+    z-index: 2;
+}
+.toolbar-stepper .stepper .stepper-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(27, 173, 225);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: background-color 0.1s linear;
+    transition: background-color 0.1s linear;
+}
+.stepper > input:focus {
+    border: 1px solid rgb(27, 173, 225);
+}
+//color
+.toolbar-color-trigger {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(41, 41, 41);
+}
+.toolbar-color-trigger-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.toolbar-color-reset {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 100%;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 7px;
+}
+//cogbutton
+.cog-button {
+    border: 0;
+    padding: 0;
+}
+//checkbox
+.checkbox {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    top: 0;
+    right: 0;
+    border: 1px solid #555;
+    font-size: 14px;
+    color: white;
+    background: transparent;
+}
+//sp-palette
+.sp-palette {
+    width: 100%;
+}
+.sp-thumb-el {
+    height: 16px;
+    display: inline-block;
+    width: 10%;
+}
+.sp-thumb-inner {
+    width: 100%;
+    height: 100%;
+}
+.palette-anchor-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: transparent;
+    color: #ccc;
+    border: transparent;
+    width: 20px;
+    height: 20px;
+}
+.palette-panel {
+    width: 100%;
+    height: 18px;
+    border: 1px dashed #888;
+    margin:8px 0;
+}

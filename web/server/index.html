@@ -1,0 +1,61 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta property="qc:admins" content="0740206777631637445756375" />
+    <title>__TITLE__</title>
+    <meta name="description" content="we and course">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href='/spinner.css' />
+    <script src="//cdn.bootcss.com/headjs/1.0.3/head.js"></script>
+</head>
+
+<body>
+    <script>
+        document.currentScript.src ='';
+        var __API_BASE = '__API_BASE__';
+        var __HOST = '__HOST__';
+        var __ASSETS = '__ASSETS__';
+        var __CONTAINER = '__CONTAINER__';
+        var __DEV = __DEV__;
+        var __QINIU_URL = '__QINIU_URL__';
+        var __IO_HOST = '__IO_HOST__';
+
+
+        var __JS = [
+            __JS__
+        ];
+        var __CSS = [
+            __CSS__
+        ];
+    </script>
+    <div id="root"></div>
+    <div id="page-spinner" class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+    <script type="text/javascript">
+        document.currentScript.src =''
+        head.load(__CSS, function() {
+            console.log('css loaded');
+            head.load(__JS, function() {
+                console.log('js loaded');
+
+                //impliment this 2 line in react
+                //var el = document.getElementById('page-spinner');
+                //el.parentNode.removeChild(el);
+            });
+        });
+    </script>
+</body>
+
+</html>

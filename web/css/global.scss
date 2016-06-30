@@ -1,0 +1,141 @@
+@import './variables.scss';
+/*-------------------------------------*/
+/* TOP STYLES */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    outline: 0;
+}
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    line-height: 1.6;
+    // background-color: $back-color;
+    padding: 46px 0 0;
+    /* padding-top = height of the header */
+}
+body,
+button,
+input,
+select {
+    font-size: 16px;
+    color: $fore-color;
+}
+/*react root*/
+#root {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+/*-------------------------------------*/
+/* GLOBAL STYLES */
+a {
+    color: $primary-light;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+a:focus,
+a:hover {
+    opacity: 0.8;
+    transition: all 0.2s ease-in;
+}
+b,
+strong {
+    font-weight: 700;
+}
+em,
+i {
+    font-style: italic;
+}
+sub,
+sup {
+    font-size: 65%;
+    position: relative;
+    line-height: 0;
+}
+sup {
+    top: -8px;
+}
+sub {
+    bottom: -8px;
+}
+p {
+    margin: 0 0 15px;
+}
+h6 {
+    font-size: 110%;
+}
+h5 {
+    font-size: 120%;
+}
+h4 {
+    font-size: 130%;
+}
+h3 {
+    font-size: 140%;
+}
+h2 {
+    font-size: 160%;
+}
+h1 {
+    font-size: 180%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0 0 15px;
+}
+ol,
+ul {
+    padding-left: 20px;
+    list-style-position: inside;
+}
+ol {
+    list-style-type: decimal;
+}
+ul {
+    list-style-type: disc;
+}
+img,
+svg,
+video {
+    max-width: 100%;
+    height: auto;
+}
+input[type="submit"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+}
+input[type="submit"]:focus {
+    outline: 0;
+}
+button,
+input[type="submit"] {
+    cursor: pointer;
+}
+textarea {
+    vertical-align: top;
+}
+table {
+    border-collapse: collapse;
+}
+td,
+th {
+    border: 1px solid;
+    padding: 20px;
+}
+th {
+    font-weight: 700;
+}

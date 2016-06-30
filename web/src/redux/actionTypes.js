@@ -1,0 +1,127 @@
+var actionTypes = {
+    //user
+    NO_TOKEN_FOUND: null,
+
+    BEFORE_INITIALIZE: null,
+    AFTER_INITIALIZE: null,
+    ERROR_INITIALIZE: null,
+
+    BEFORE_REGISTER: null,
+    AFTER_REGISTER: null,
+    ERROR_REGISTER: null,
+
+    BEFORE_LOGIN: null,
+    AFTER_LOGIN: null,
+    ERROR_LOGIN: null,
+
+    BEFORE_ANONYMOUS_LOGIN: null,
+    AFTER_ANONYMOUS_LOGIN: null,
+    ERROR_ANONYMOUS_LOGIN: null,
+
+    BEFORE_MODIFY_PASSWORD: null,
+    AFTER_MODIFY_PASSWORD: null,
+    ERROR_MODIFY_PASSWORD: null,
+
+    LOGOUT: null,
+
+    //presentation
+    SET_CURRENT_BLOCK: null,
+    SET_CURRENT_BLOCK_NULL: null,
+
+    BEFORE_CREATE_NEW_PRESENTATION: null,
+    AFTER_CREATE_NEW_PRESENTATION: null,
+    ERROR_CREATE_NEW_PRESENTATION: null,
+
+    BEFORE_GET_PRESENTATION_LIST: null,
+    AFTER_GET_PRESENTATION_LIST: null,
+    ERROR_GET_PRESENTATION_LIST: null,
+
+    BEFORE_GET_PRESENTATION: null,
+    AFTER_GET_PRESENTATION: null,
+    ERROR_GET_PRESENTATION: null,
+
+    BEFORE_REMOVE_PRESENTATION: null,
+    AFTER_REMOVE_PRESENTATION: null,
+    ERROR_REMOVE_PRESENTATION: null,
+
+    BEFORE_UPDATE_PRESENTATION: null,
+    AFTER_UPDATE_PRESENTATION: null,
+    ERROR_UPDATE_PRESENTATION: null,
+
+    //disk
+
+    BEFORE_GET_ROOT: null,
+    AFTER_GET_ROOT: null,
+    ERROR_GET_ROOT: null,
+
+    SHOW_NEW_DIRECTORY: null,
+
+    BEFORE_CREATE_NEW_DIRECTORY: null,
+    AFTER_CREATE_NEW_DIRECTORY: null,
+    ERROR_CREATE_NEW_DIRECTORY: null,
+
+    BEFORE_DIVE_INTO_DIRECTORY: null,
+    AFTER_DIVE_INTO_DIRECTORY: null,
+    ERROR_DIVE_INTO_DIRECTORY: null,
+
+    SWITCH_EDIT_STATUS: null,
+
+    BEFORE_REMOVE_DIRECTORY: null,
+    AFTER_REMOVE_DIRECTORY: null,
+    ERROR_REMOVE_DIRECTORY: null,
+
+    EDIT_DIRECTORY: null,
+
+    BEFORE_RENAME_DIRECTORY: null,
+    AFTER_RENAME_DIRECTORY: null,
+    ERROR_RENAME_DIRECTORY: null,
+
+    BEFORE_REQUEST_UPLOAD: null,
+    AFTER_REQUEST_UPLOAD: null,
+    ERROR_REQUEST_UPLOAD: null,
+
+    BEFORE_REMOVE_FILE: null,
+    AFTER_REMOVE_FILE: null,
+    ERROR_REMOVE_FILE: null,
+
+    EDIT_FILE: null,
+
+    BEFORE_RENAME_FILE: null,
+    AFTER_RENAME_FILE: null,
+    ERROR_RENAME_FILE: null,
+
+    BEFORE_REQUEST_DOWNLOAD: null,
+    AFTER_REQUEST_DOWNLOAD: null,
+    ERROR_REQUEST_DOWNLOAD: null,
+
+    SWITCH_TO_MOVE_FILE_MODE: null,
+
+    BEFORE_MOVE_FILE: null,
+    AFTER_MOVE_FILE: null,
+    ERROR_MOVE_FILE: null,
+
+    //uploader
+    QUEUE: null,
+    UPLOAD_PROGRESS: null,
+    UPLOADED: null,
+
+
+    BEFORE_REQUEST_PLAY: null,
+    AFTER_REQUEST_PLAY: null,
+    ERROR_REQUEST_PLAY: null,
+
+    BEFORE_GO_PLAY: null,
+    AFTER_GO_PLAY: null,
+    ERROR_GO_PLAY: null,
+
+    BEFORE_GET_SNAPSHOT_LIST: null,
+    AFTER_GET_SNAPSHOT_LIST: null,
+    ERROR_GET_SNAPSHOT_LIST: null,
+
+};
+
+Object.keys(actionTypes).forEach(function(key) {
+    actionTypes[key] = key;
+});
+
+export default actionTypes;

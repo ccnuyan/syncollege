@@ -1,0 +1,13 @@
+export SYNCOLLEGE_MONGO_PROD_HOST=www.syncollege.com:30000
+export SYNCOLLEGE_MONGO_PROD_ADMIN_USER=ccnuyan
+export SYNCOLLEGE_MONGO_PROD_ADMIN_PASS=h6b8r4l6
+export SYNCOLLEGE_MONGO_PROD_USER=syncollege
+export SYNCOLLEGE_MONGO_PROD_PASS=bx6ht
+
+export QINIU_ACCESS_KEY=-ep_FkVEcGngEskOY3VDYwToOcRkpQeaAv3cvnrZ
+export QINIU_SECRET_KEY=xlHeJJn4u5Ldn5reNI0l2ug5BxV7mDfDP66RAuaH
+export QINIU_BUCKET=syncollege
+
+export SYNCOLLEGE_DOMAIN=http://www.syncollege.com/
+
+export JWT_SECRET=h6b8r4l6

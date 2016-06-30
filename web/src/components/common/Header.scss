@@ -1,0 +1,19 @@
+@import '../variables';
+.logo {
+    padding: 40px 10px;
+    font-size: 200%;
+    text-align: center;
+}
+.links {
+    position: absolute;
+    top:20px ;
+    right: 20px;
+    font-size: 90%;
+}
+.links > .linkEach {
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+}

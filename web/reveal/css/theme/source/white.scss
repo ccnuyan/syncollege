@@ -1,0 +1,13 @@
+@import "../template/mixins";
+@import "../template/settings"; // ---------------------------------------------
+$backgroundColor: #fff;
+$mainColor: #222;
+$headingColor: #222;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+@import "../template/theme"; // ---------------------------------------------

@@ -1,0 +1,19 @@
+@import '../../components/variables'; //这里不能为app设置z-index其生效导致app中无法有部分元素位于reveal上方，部分位于reveal下方
+.app {
+}
+.pageContent {
+}
+.qrcodeOverlay {
+    animation-name: emerge;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.6s;
+    -moz-animation-name: emerge;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 0.6s;
+    -webkit-animation-name: emerge;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 0.6s;
+}

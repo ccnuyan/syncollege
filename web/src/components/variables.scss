@@ -1,0 +1,95 @@
+@import '../../css/variables.scss';
+$user-module-form-width: 400px;
+$header-height: 47px;
+$footer-height: 22px;
+$page-margin-bottom: 35px;
+.html {
+  overflow: hidden;
+}
+.module {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  padding-bottom: $page-margin-bottom;
+  z-index: 1;
+}
+.userForm {
+  width: $user-module-form-width;
+  position: relative;
+  margin-left: -200px;
+  left: 50%;
+}
+@-moz-keyframes drop {
+  0% {
+    // -moz-transform: translateY(-10px);
+    opacity: 0.1;
+  }
+  100% {
+    -moz-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes drop {
+  0% {
+    // -webkit-transform: translateY(-10px);
+    opacity: 0.1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes drop {
+  0% {
+    // transform: translateY(-10px);
+    opacity: 0.1;
+  }
+  100% {
+    // transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes emerge {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes emerge {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes emerge {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

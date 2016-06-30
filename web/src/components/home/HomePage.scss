@@ -1,0 +1,58 @@
+@import '../variables';
+.home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.reveal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.homeBackground {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.area {
+    position: absolute;
+    bottom: 15%;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+}
+.area > div {
+    width: 120px;
+    color: #ccc;
+    text-align: center;
+    position: absolute;
+    background: #444;
+    left: 50%;
+    margin-left: -60px;
+    padding: 5px 0;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    user-select: none;
+    cursor: pointer;
+}
+.area > div:hover {
+    background: transparent;
+    border: 2px solid #ccc;
+}
+.userPanel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 20px;
+}

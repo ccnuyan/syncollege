@@ -1,0 +1,11 @@
+## 技术方案
+- 数据库:Mongodb
+- 服务:Express
+- Authentication中间件:Passport
+- 服务建构:Gulp
+- 服务测试方案:mocha + supertest
+- 前端:React+Redux+immutable.js
+- 前端建构:webpack
+- 前端测试:待定
+- 邮件服务器:待定
+- 服务部署:Docker+Ubuntu

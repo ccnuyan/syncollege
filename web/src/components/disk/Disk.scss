@@ -1,0 +1,180 @@
+@import '../variables'; //parent def of file & directory
+.itemEach {
+  width: 25%;
+  position: relative;
+  display: inline-block;
+  margin: 10px 0;
+  height: 100px;
+  padding: 0;
+  animation-name: drop;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.6s;
+  -moz-animation-name: drop;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-duration: 0.6s;
+  -webkit-animation-name: drop;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 0.6s;
+}
+.item {
+  height: 100%;
+  position: absolute;
+  font-size: 80%;
+  left: 15px;
+  right: 15px;
+  border: 2px solid $default-color;
+  cursor: pointer;
+}
+.item>.body {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.itemOptions {
+  width: 40px;
+  z-index: 255;
+  position: absolute;
+  bottom: -22px;
+  right: -2px;
+}
+.itemOptions>button {
+  padding: 0;
+  border-radius: 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 10%;
+  left: 100%;
+  top: 0;
+}
+.itemLogo {
+  position: absolute;
+  font-size: 2em;
+  left: 5px;
+  top: 5px;
+}
+.itemInput {
+  width: 100%;
+  margin: 0;
+  background: #fff;
+}
+.subItemsTag {
+  position: absolute;
+  font-size: 80%;
+  margin: 5px;
+  right: 0;
+  top: 0;
+}
+.itemName {
+  position: absolute;
+  font-weight: 100;
+  left: 5px;
+  top: 40px;
+  right: 0;
+  word-wrap: break-word;
+}
+//directory
+.directory {
+  @extend .item;
+  background: $default-color;
+  color: #fff;
+}
+.directory:hover {
+  background: $primary-color;
+}
+//newDirectory
+.newDirectory {
+  @extend .directory;
+  background: $warning-color;
+  color: #fff;
+  border-color: transparent;
+}
+.newDirectoryPlus {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.newDirectoryForm {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.newDirectoryTextArea {
+  padding: 10px;
+  resize: none;
+  min-height: 100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: $default-dark;
+  border: 0;
+}
+//newDirectory
+.parentDirectory {
+  @extend .directory;
+  border-color: transparent;
+}
+//directory
+.uploadingFile {
+  @extend .item;
+  background: $default-color;
+  color: #fff;
+  border-color: transparent;
+}
+.uploadingProgress {
+  background: $success-color;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+}
+.file {
+  @extend .item;
+  border: 2px solid $default-color;
+  color: $default-color;
+}
+.file.itemOptions {
+  top: -2px;
+}
+.file:hover {
+  @extend .item;
+  border: 2px solid $default-dark;
+  color: $default-dark;
+}
+.overlay[data-image=true] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: $default-color;
+  opacity: 0;
+  color: white;
+}
+.fileImage {
+  border: 1px solid transparent;
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.fileImageContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.uploadingTag {
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+}
