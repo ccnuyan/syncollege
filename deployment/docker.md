@@ -1,35 +1,31 @@
-# node
+## this documentation has been integrated into package.json's scripts
 
+## installation
+
+node 
 ```
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-# git
-
+git
 ```
 sudo apt-get install -y git
 sudo git clone http://github.com/ccnuyan/starc3_oauth2
 ```
 
-# build-essential
-
+build-essential
 ```
 sudo apt-get install -y build-essential
 ```
 
-# node-sass
-
-`sudo npm run itaobao node-sass --save`
-
-# npm
+## npm
 
 ```
-sudo npm run itaobao
-sudo npm run wp-build
+sudo npm run itaobao --prod
 ```
 
-# web
+## web
 
 ```
 docker rm -f web
@@ -38,7 +34,7 @@ docker run -d -p 8000:8000 -v /root/source:/etc/source --name web web:0.0.1
 docker logs -f web
 ```
 
-# api
+## api
 
 ```
 docker rm -f api

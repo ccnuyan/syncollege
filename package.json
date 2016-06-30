@@ -13,7 +13,7 @@
     "start-api-prod": "cd api; node --harmony ./server.js --prod",
     "test-model": "source bashrc.local; cd api && gulp mocha-model",
     "test-route": "source bashrc.local; cd api && gulp mocha-route",
-    "push-bc": "npm run wp-build; git add .;git commit -m 'ready to publish';git push",
+    "push": "npm run wp-build; git add .;git commit -m 'ready to publish';git push",
     "run-web": "docker rm -f web;docker build -t web:0.0.1 -f Dockerfile.web .;docker run -d -p 8000:8000 -v /root/source:/etc/source --name web web:0.0.1;docker logs -f web",
     "run-api": "docker rm -f api;docker build -t api:0.0.1 -f Dockerfile.api .;docker run -d -p 3000:3000 -v /root/source:/etc/source --name api api:0.0.1;docker logs -f api"
   },
