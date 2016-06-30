@@ -2,3 +2,4 @@ node_modules
 web/build/*.json
 !web/build/build.stats.json
 ./npm-debug.log
+deployment
