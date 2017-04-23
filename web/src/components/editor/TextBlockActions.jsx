@@ -59,7 +59,7 @@ class TextBlockActions extends React.Component {
 
         return <div>
             <div className={cn(css['toolbar-option'], css['toolbar-multi'])} data-number-of-items="4">
-                <h4 className={cn(css['toolbar-option-label'])}>Text Alignment</h4>
+                <h4 className={cn(css['toolbar-option-label'])}>文本对齐</h4>
                 <div className={cn(css['toolbar-multi-inner'])}>
                     <div onClick={this.setTextAlign} className={cn(css['toolbar-multi-item'])} data-text-align="left">
                         <span className={cn(css['icon'], 'icon-paragraph-left')}></span>
@@ -76,11 +76,11 @@ class TextBlockActions extends React.Component {
                 </div>
             </div>
 
-            <Stepper stepperType="text-scale" changeCallback={this.setFontScale} label="Text Scale" initialValue={block.text.fontSize}></Stepper>
-            <Stepper stepperType="opacity" changeCallback={this.setFontOpacity} label="Opacity" initialValue={block.text.opacity}></Stepper>
+            <Stepper stepperType="text-scale" changeCallback={this.setFontScale} label="文本大小" initialValue={block.text.fontSize}></Stepper>
+            <Stepper stepperType="opacity" changeCallback={this.setFontOpacity} label="透明度" initialValue={block.text.opacity}></Stepper>
 
-            <ColorPicker initialColor={block.text.color} changeCallback={this.setTextColor} label="Color" clearCallback={this.clearTextColor}></ColorPicker>
-            <ColorPicker initialColor={block.text.Background} changeCallback={this.setTextBackground} label="Background" clearCallback={this.clearTextBackground}></ColorPicker>
+            <ColorPicker initialColor={block.text.color} changeCallback={this.setTextColor} label="颜色" clearCallback={this.clearTextColor}></ColorPicker>
+            <ColorPicker initialColor={block.text.Background} changeCallback={this.setTextBackground} label="背景" clearCallback={this.clearTextBackground}></ColorPicker>
             <SelectableOptions label="Selectable"></SelectableOptions>
     </div>;
     }

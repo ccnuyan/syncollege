@@ -32,18 +32,18 @@ class Sidebar extends React.Component {
         var css = this.props.css;
         return <div>
             <div className={css.primary}>
-                <div onClick={this.onSwitchToPreviewMode} className={cn(css.button, css.preview, 'hint--right')} data-hint="Preview">
+                <div onClick={this.onSwitchToPreviewMode} className={cn(css.button, css.preview, 'hint--right')} data-hint="预览">
                     <span className={cn(css.icon, 'icon-eye')}></span>
                 </div>
-                <div className={cn(css.button, css.undo, 'hint--right')} data-hint="Undo">
+                <div className={cn(css.button, css.undo, 'hint--right')} data-hint="撤销">
                     <span className={cn(css.icon, 'icon-arrow-up-left')}></span>
                 </div>
-                <div onClick={this.onSave} className={cn(css.button, css.save, 'hint--right')} data-hint="Save">
+                <div onClick={this.onSave} className={cn(css.button, css.save, 'hint--right')} data-hint="保存">
                     <span className={cn(css.icon, 'icon-floppy-disk')}></span>
                 </div>
             </div>
             <div className={css.secondary}>
-                <div className={cn(css.button, 'hint--right')} data-hint="Settings">
+                <div className={cn(css.button, 'hint--right')} data-hint="设置">
                     <span className={cn(css.icon, 'icon-cog')}></span>
                 </div>
             </div>

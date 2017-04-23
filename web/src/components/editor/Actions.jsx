@@ -18,7 +18,7 @@ class Actions extends React.Component {
     render() {
         var css = this.props.css;
         return <div className={cn(css['toolbar-option'], css['toolbar-multi'])} data-number-of-items="2">
-            <h4 className={cn(css['toolbar-option-label'])}>Actions</h4>
+            <h4 className={cn(css['toolbar-option-label'])}>动作</h4>
             <div className={cn(css['toolbar-multi-inner'])}>
                 <div onClick={this.remove} className={cn(css['toolbar-multi-item'])}>
                     <span className={cn(css['icon'], 'icon-bin')}></span>

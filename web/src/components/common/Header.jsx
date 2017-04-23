@@ -33,7 +33,7 @@ class Header extends React.Component {
                 background: '#ccc'
             }}>
                 <div data-target="/main" className={cn(css.logo)}>
-                    Syncollege
+                    新课幻灯片
                 </div>
                 {!_.isEmpty(payload)
                     ? <div className={cn(css.links)}>
