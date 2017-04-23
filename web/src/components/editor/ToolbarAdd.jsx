@@ -22,13 +22,13 @@ class ToolbarAdd extends React.Component {
                 <span className={cn(css['toolbar-add-block-option-icon'])}>
                     <i className="icon-font-size"></i>
                 </span>
-                <span className={cn(css['toolbar-add-block-option-label'])}>Text</span>
+                <span className={cn(css['toolbar-add-block-option-label'])}>文字</span>
             </div>
             <div onClick={this.onAddImage} className={cn(css['toolbar-add-block-option'])}>
                 <span className={cn(css['toolbar-add-block-option-icon'])}>
                     <i className="icon-image"></i>
                 </span>
-                <span className={cn(css['toolbar-add-block-option-label'])}>Image</span>
+                <span className={cn(css['toolbar-add-block-option-label'])}>图像</span>
             </div>
         </div>;
     }

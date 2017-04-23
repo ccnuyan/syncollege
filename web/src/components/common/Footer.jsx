@@ -10,7 +10,7 @@ class Footer extends React.Component {
         <div className={'container-full'}>
           <div className={'grid-parent'}>
             <div>
-              <div>Copyright 2016, NERCEL, Inc. All rights reserved.</div>
+              <div>国家数字化学习技术工程研究中心</div>
             </div>
           </div>
         </div>
